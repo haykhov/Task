@@ -2,5 +2,5 @@
 
 interface MatchedInterface{
 
-    static function calculate($key);
+    static function calculate();
 }

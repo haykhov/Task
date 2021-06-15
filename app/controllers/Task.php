@@ -31,7 +31,6 @@ class Task extends Controller
             $this->rec = Matched::getMatches($content);
 
             $this->view('task/recommendation', $this->rec);
-            //echo '<pre>'; var_dump($content, $matches); exit;
         } else {
             throw new Exception('File does not uploaded successfully', 400);
         }

@@ -12,6 +12,8 @@ class ReadFile
     public static function getFileContent($file)
     {
         /* Check if file exist */
+
+
         if (file_exists($file)) {
             $content = [];
             $row = 0;

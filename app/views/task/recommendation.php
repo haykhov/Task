@@ -26,7 +26,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($this->rec as $key => $eachRecommendation):?>
+                    <?php foreach ($this->rec['users'] as $key => $eachRecommendation):?>
                         <tr>
                             <th scope="row"><?=++$key?></th>
                             <td><?=$eachRecommendation['users']?></td>
@@ -34,6 +34,12 @@
                         </tr>
                     <?php endforeach;?>
                     </tbody>
+                    <tfoot>
+                    <tr>
+                        <th scope="row" colspan="2">Total</th>
+                        <th scope="col"><?=$this->rec['total']?></th>
+                    </tr>
+                    </tfoot>
                 </table>
 
             </div>

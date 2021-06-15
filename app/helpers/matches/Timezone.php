@@ -9,9 +9,9 @@ class Timezone extends Matched implements MatchedInterface
      *
      * @param string $key
      **/
-    public static function calculate($key)
+    public static function calculate()
     {
-        parent::$matches[$key] += self::TIMEZONE;
+        return self::TIMEZONE;
     }
 
 }

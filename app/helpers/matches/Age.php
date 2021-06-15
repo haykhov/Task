@@ -9,9 +9,9 @@ class Age extends Matched implements MatchedInterface
      *
      * @param string $key
      **/
-    public static function calculate($key)
+    public static function calculate($key, $key1)
     {
-        parent::$matches[$key] += self::AGE;
+        return self::AGE;
     }
 
 }
